@@ -1,0 +1,18 @@
+// main.scss -> fichier référence pour importer les autres fichiers scss
+@import 'base';
+
+// Pages
+@import '../pages/Housing/housing.page';
+
+// Components
+@import '../components/Header/header.component';
+@import '../components/Footer/footer.component';
+@import '../components/Banner/banner.component';
+@import '../components/Collapse/collapse.component';
+@import '../components/SlideShow/slideshow.component';
+@import '../components/List/list.component';
+@import '../components/CardsContainer/cardsContainer.component';
+@import '../components/HousingCard/housingCard.component';
+@import '../components/HousingTag/housingTag.component';
+@import '../components/StarRating/starRating.component';
+@import '../components/Error/error.component';

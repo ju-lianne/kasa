@@ -1,0 +1,86 @@
+$main-color: #ff6060;
+
+.housing-body {
+    .slideshow-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .housing-infos {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+
+        color: $main-color;
+        font-size: 1.5rem;
+        font-weight: 400;
+
+        @media screen and (min-width: 501px) {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+
+    .location {
+        margin-bottom: 0.75rem;
+    }
+
+    .host-and-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .host-infos {
+        display: flex;
+        gap: 0.75rem;
+        color: $main-color;
+
+        &__name {
+            width: 5rem;
+            text-align: end;
+            margin: 0;
+        }
+
+        &__pp {
+            border-radius: 100px;
+            height: 3rem;
+        }
+    }
+
+    .housing-body__collapses-container {
+        .btn span {
+            font-size: 1rem;
+        }
+    }
+
+    .collapse-menu {
+        margin-bottom: 1rem;
+    }
+
+    @media screen and (min-width:501px) {
+        .housing-infos {
+            display: flex;
+            justify-content: space-between;
+    
+            .host-and-rating {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    
+        .housing-body__collapses-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 5rem;
+        }
+    
+    }
+}
